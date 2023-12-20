@@ -5,16 +5,19 @@
 }
 
 body {
-  background-color: aliceblue
+  background: #1c121f;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .container {
-  max-width: 1200px;
+  position: relative;
+  max-width: 1397px;
+  padding: 0;
   margin: 0 auto;
 }
 
 .nav__bar nav {
-  padding: 10px;
+  padding: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -33,19 +36,19 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  display: flex;
 }
 
 .nav__bar nav ul li {
   display: inline-block;
-  margin-right: 40px;
+  margin-right: 50px;
 }
 
 .nav__bar nav ul li a {
-  font-family: 'Lato', sans-serif;
   text-decoration: none;
-  color: #000;
+  color: white;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 600;
   position: relative;
 }
 
@@ -54,14 +57,70 @@ body {
   position: absolute;
   bottom: 0;
   left: 0;
-  margin-bottom: -2px;
+  margin-bottom: -3px;
   width: 100%;
   height: 1.5px;
-  background-color: orange;
+  background-color: #FF8C00;
   transform: scaleX(0);
   transition: transform 0.3s ease-in-out;
 }
 
 .nav__bar nav ul li a:hover::after {
   transform: scaleX(1);
+}
+
+.nav__bar nav ul li input {
+  font-family: 'Open Sans', sans-serif;
+  background-color: whitesmoke;
+  font-weight: 600;
+  width: 250px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+  font-size: 18px;
+}
+
+.hamburger__menu {
+  color: white;
+  font-size: 25px;
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger__menu:hover {
+  color: #FF8C00;
+}
+
+
+@media screen and (max-width: 800px) {
+  .nav__bar nav ul {
+      position: fixed;
+      left: 0;
+      top: 0;
+      flex-direction: column;
+      width: 100%;
+      height: 100vh;
+      background: #1c121f;
+      align-items: center;
+      justify-content: center;
+      transform: translateX(-100%);
+      transition: transform 0.3s ease;
+      padding-top: 50px;
+  }
+
+  .nav__bar nav ul.open {
+      transform: translateX(0);
+  }
+
+  .nav__bar nav ul li {
+      margin: 20px 0;
+  }
+
+  .hamburger__menu {
+      display: block;
+      position: absolute;
+      right: 20px;
+      top: 20px;
+  }
 }
