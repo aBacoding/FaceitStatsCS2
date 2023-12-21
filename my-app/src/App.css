@@ -16,6 +16,23 @@ body {
   margin: 0 auto;
 }
 
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1c121f;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #FF8C00;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff8c00c5;
+}
+
 .nav__bar nav {
   padding: 15px;
   display: flex;
