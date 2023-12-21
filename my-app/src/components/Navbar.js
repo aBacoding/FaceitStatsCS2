@@ -22,13 +22,16 @@ function Navbar() {
                 <div>
                     <ul className={isMenuOpen ? 'open' : ''}>
                         <li>
-                            <a href="/">Home</a>
+                            <a href="/">Games</a>
                         </li>
                         <li>
-                            <a href="/">About</a>
+                            <a href="/">How It Works</a>
                         </li>
                         <li>
-                            <input type="text" placeholder="Search by nickname" />
+                            <a href="/">Leaderboard</a>
+                        </li>
+                        <li>
+                            <input type="text" placeholder="Enter Faceit nickname..." />
                         </li>
                     </ul>
                 </div>

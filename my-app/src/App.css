@@ -83,7 +83,7 @@ body {
 
 .hamburger__menu {
   color: white;
-  font-size: 25px;
+  font-size: 35px;
   display: none;
   cursor: pointer;
 }
@@ -93,7 +93,7 @@ body {
 }
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
   .nav__bar nav ul {
       position: fixed;
       left: 0;
@@ -122,5 +122,80 @@ body {
       position: absolute;
       right: 20px;
       top: 20px;
+  }
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.home h1 {
+  font-size: 3.4em;
+  font-weight: 700;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  color: white;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(151, 151, 151, 0.5);
+}
+
+.home p {
+  font-size: 1.8em;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  text-align: center;
+  color: rgb(179, 179, 179);
+  margin-bottom: 30px;
+}
+
+
+.home input {
+  border-radius: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  background-color: whitesmoke;
+  padding: 10px;
+  font-size: 1em;
+  width: 100%;
+  max-width: 750px;
+  margin-bottom: 20px;
+}
+
+.home button {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.home button:hover {
+  background-color: #FF8C00;
+  color: white;
+}
+
+@media (max-width: 1024px) {
+  .home {
+      padding: 40px;
+  }
+
+  .home h1 {
+      text-align: center;
+      font-size: 2.5em;
+  }
+
+  .home p {
+      font-size: 2em;
+      text-align: center;
+  }
+
+  .home input {
+      width: 100%;
   }
 }
