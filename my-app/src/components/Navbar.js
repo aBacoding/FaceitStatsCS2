@@ -14,7 +14,7 @@ function Navbar() {
         <div className="nav__bar">
             <nav>
                 <a href="/">
-                    <img  src={isHovered ? "../public/../images/cib-faceit1.png" : "../public/../images/cib-faceit.png"} alt="logo" 
+                    <img src={isHovered ? "../public/../images/cib-faceit1.png" : "../public/../images/cib-faceit.png"} alt="logo" 
                     onMouseEnter={() => setIsHovered(true)} 
                     onMouseLeave={() => setIsHovered(false)}
                     />
